@@ -1,0 +1,251 @@
+timestamp,cpu_pct,memory_pct,disk_pct,network_mbps,ground_truth_scenario
+2026-10-17 07:21:45,27.5,46.22,38.2,123.09,Normal Operation
+2026-10-17 07:22:45,35.81,49.28,41.91,120.1,Normal Operation
+2026-10-17 07:23:45,30.2,47.54,44.75,139.68,Normal Operation
+2026-10-17 07:24:45,34.46,45.44,33.3,123.29,Normal Operation
+2026-10-17 07:25:45,29.86,49.6,41.22,130.3,Normal Operation
+2026-10-17 07:26:45,30.75,49.36,35.66,136.3,Normal Operation
+2026-10-17 07:27:45,34.22,44.9,36.97,150.92,Normal Operation
+2026-10-17 07:28:45,35.04,49.14,39.01,125.43,Normal Operation
+2026-10-17 07:29:45,32.32,50.05,39.72,158.26,Normal Operation
+2026-10-17 07:30:45,24.98,48.89,43.81,132.77,Normal Operation
+2026-10-17 07:31:45,33.22,48.26,39.13,166.57,Normal Operation
+2026-10-17 07:32:45,36.72,51.81,38.44,148.79,Normal Operation
+2026-10-17 07:33:45,34.91,48.15,36.39,124.3,Normal Operation
+2026-10-17 07:34:45,36.92,53.06,35.02,165.78,Normal Operation
+2026-10-17 07:35:45,36.74,48.23,34.61,155.23,Normal Operation
+2026-10-17 07:36:45,31.22,51.64,40.51,178.78,Normal Operation
+2026-10-17 07:37:45,39.76,53.44,35.2,178.16,Normal Operation
+2026-10-17 07:38:45,35.05,47.32,42.52,188.47,Normal Operation
+2026-10-17 07:39:45,35.71,50.89,39.41,181.52,Normal Operation
+2026-10-17 07:40:45,39.89,48.53,41.19,191.1,Normal Operation
+2026-10-17 07:41:45,35.6,51.59,36.65,193.8,Normal Operation
+2026-10-17 07:42:45,39.38,52.87,41.52,196.73,Normal Operation
+2026-10-17 07:43:45,35.75,53.55,35.78,158.38,Normal Operation
+2026-10-17 07:44:45,38.35,52.03,36.63,193.26,Normal Operation
+2026-10-17 07:45:45,37.93,49.29,32.08,214.64,Normal Operation
+2026-10-17 07:46:45,37.81,51.35,32.12,172.75,Normal Operation
+2026-10-17 07:47:45,36.74,55.12,34.15,194.07,Normal Operation
+2026-10-17 07:48:45,39.58,52.31,37.14,212.55,Normal Operation
+2026-10-17 07:49:45,40.28,54.18,36.77,198.42,Normal Operation
+2026-10-17 07:50:45,43.17,51.95,37.74,172.49,Normal Operation
+2026-10-17 07:51:45,37.97,47.17,36.04,181.71,Normal Operation
+2026-10-17 07:52:45,40.18,48.89,30.17,210.34,Normal Operation
+2026-10-17 07:53:45,47.71,50.74,33.23,169.47,Normal Operation
+2026-10-17 07:54:45,41.32,47.31,33.3,201.26,Normal Operation
+2026-10-17 07:55:45,41.56,50.43,35.84,203.36,Normal Operation
+2026-10-17 07:56:45,41.29,45.04,36.68,194.34,Normal Operation
+2026-10-17 07:57:45,33.67,48.58,31.84,195.96,Normal Operation
+2026-10-17 07:58:45,38.62,49.73,29.38,187.08,Normal Operation
+2026-10-17 07:59:45,31.8,44.65,35.02,188.21,Normal Operation
+2026-10-17 08:00:45,42.08,49.28,37.58,183.28,Normal Operation
+2026-10-17 08:01:45,44.77,49.79,37.44,181.59,Normal Operation
+2026-10-17 08:02:45,36.69,49.65,32.08,151.05,Normal Operation
+2026-10-17 08:03:45,44.41,44.28,32.35,178.16,Normal Operation
+2026-10-17 08:04:45,33.98,44.5,30.92,188.84,Normal Operation
+2026-10-17 08:05:45,33.38,49.42,36.33,171.25,Normal Operation
+2026-10-17 08:06:45,39.11,49.19,31.97,161.99,Normal Operation
+2026-10-17 08:07:45,33.92,44.56,34.39,178.7,Normal Operation
+2026-10-17 08:08:45,34.61,43.78,32.24,142.26,Normal Operation
+2026-10-17 08:09:45,39.71,48.13,34.76,123.48,Normal Operation
+2026-10-17 08:10:45,32.03,42.04,36.88,163.8,Normal Operation
+2026-10-17 08:11:45,33.97,47.03,31.27,143.96,Normal Operation
+2026-10-17 08:12:45,34.04,42.15,32.41,130.26,Normal Operation
+2026-10-17 08:13:45,35.26,42.32,31.45,146.49,Normal Operation
+2026-10-17 08:14:45,35.96,45.12,30.94,144.5,Normal Operation
+2026-10-17 08:15:45,32.49,46.01,29.28,167.4,Normal Operation
+2026-10-17 08:16:45,28.1,45.81,27.53,146.02,Normal Operation
+2026-10-17 08:17:45,35.26,44.45,23.71,154.87,Normal Operation
+2026-10-17 08:18:45,41.21,42.18,31.15,152.19,Normal Operation
+2026-10-17 08:19:45,33.43,42.04,30.66,140.22,Normal Operation
+2026-10-17 08:20:45,31.92,43.89,33.43,139.11,Normal Operation
+2026-10-17 08:21:45,28.04,44.54,30.12,120.83,Normal Operation
+2026-10-17 08:22:45,27.87,41.14,25.72,120.19,Normal Operation
+2026-10-17 08:23:45,23.29,41.32,33.01,126.68,Normal Operation
+2026-10-17 08:24:45,29.71,41.27,38.06,122.33,Normal Operation
+2026-10-17 08:25:45,26.47,42.35,29.76,173.18,Normal Operation
+2026-10-17 08:26:45,30.85,40.15,33.43,119.63,Normal Operation
+2026-10-17 08:27:45,22.11,41.8,34.4,96.48,Normal Operation
+2026-10-17 08:28:45,29.93,42.06,27.87,85.06,Normal Operation
+2026-10-17 08:29:45,23.48,42.48,28.31,75.57,Normal Operation
+2026-10-17 08:30:45,21.85,42.2,32.82,124.35,Normal Operation
+2026-10-17 08:31:45,21.73,38.62,29.19,78.74,Normal Operation
+2026-10-17 08:32:45,20.74,41.09,27.17,107.45,Normal Operation
+2026-10-17 08:33:45,15.02,41.71,32.33,104.39,Normal Operation
+2026-10-17 08:34:45,24.04,39.31,38.36,71.83,Normal Operation
+2026-10-17 08:35:45,24.0,39.78,26.92,91.48,Normal Operation
+2026-10-17 08:36:45,25.28,43.25,29.13,99.19,Normal Operation
+2026-10-17 08:37:45,22.79,36.42,33.28,46.04,Normal Operation
+2026-10-17 08:38:45,22.17,44.61,30.12,87.31,Normal Operation
+2026-10-17 08:39:45,13.56,42.64,30.8,95.73,Normal Operation
+2026-10-17 08:40:45,19.66,39.53,31.51,69.43,Normal Operation
+2026-10-17 08:41:45,14.67,43.34,31.14,59.85,Normal Operation
+2026-10-17 08:42:45,17.29,38.12,31.81,59.08,Normal Operation
+2026-10-17 08:43:45,22.81,41.07,30.91,20.1,Normal Operation
+2026-10-17 08:44:45,17.72,37.23,35.32,49.17,Normal Operation
+2026-10-17 08:45:45,8.17,43.16,31.85,69.81,Normal Operation
+2026-10-17 08:46:45,13.55,38.75,31.23,36.7,Normal Operation
+2026-10-17 08:47:45,14.84,41.79,34.08,58.34,Normal Operation
+2026-10-17 08:48:45,15.83,40.52,35.78,74.95,Normal Operation
+2026-10-17 08:49:45,19.72,39.41,34.88,54.24,Normal Operation
+2026-10-17 08:50:45,19.22,39.13,35.56,72.79,Normal Operation
+2026-10-17 08:51:45,93.95,53.51,38.05,34.57,Anomaly: CPU Runaway Thread / Heavy Compute
+2026-10-17 08:52:45,98.78,47.45,28.33,49.6,Anomaly: CPU Runaway Thread / Heavy Compute
+2026-10-17 08:53:45,98.47,51.15,31.0,80.59,Anomaly: CPU Runaway Thread / Heavy Compute
+2026-10-17 08:54:45,96.14,48.46,31.97,39.29,Anomaly: CPU Runaway Thread / Heavy Compute
+2026-10-17 08:55:45,93.13,51.63,31.23,52.84,Anomaly: CPU Runaway Thread / Heavy Compute
+2026-10-17 08:56:45,94.25,51.39,35.62,123.03,Anomaly: CPU Runaway Thread / Heavy Compute
+2026-10-17 08:57:45,92.58,45.37,35.62,67.42,Anomaly: CPU Runaway Thread / Heavy Compute
+2026-10-17 08:58:45,98.07,49.05,39.18,58.68,Anomaly: CPU Runaway Thread / Heavy Compute
+2026-10-17 08:59:45,92.71,49.6,35.39,29.85,Anomaly: CPU Runaway Thread / Heavy Compute
+2026-10-17 09:00:45,98.98,48.29,32.47,48.74,Anomaly: CPU Runaway Thread / Heavy Compute
+2026-10-17 09:01:45,95.37,49.79,40.74,51.28,Anomaly: CPU Runaway Thread / Heavy Compute
+2026-10-17 09:02:45,96.48,50.82,40.21,38.36,Anomaly: CPU Runaway Thread / Heavy Compute
+2026-10-17 09:03:45,92.56,50.64,37.58,46.22,Anomaly: CPU Runaway Thread / Heavy Compute
+2026-10-17 09:04:45,98.53,49.09,42.48,70.74,Anomaly: CPU Runaway Thread / Heavy Compute
+2026-10-17 09:05:45,95.39,50.61,45.82,48.97,Anomaly: CPU Runaway Thread / Heavy Compute
+2026-10-17 09:06:45,95.95,53.02,35.52,70.81,Anomaly: CPU Runaway Thread / Heavy Compute
+2026-10-17 09:07:45,95.04,51.82,35.59,38.05,Anomaly: CPU Runaway Thread / Heavy Compute
+2026-10-17 09:08:45,98.19,49.57,40.2,45.51,Anomaly: CPU Runaway Thread / Heavy Compute
+2026-10-17 09:09:45,98.1,50.67,36.83,101.03,Anomaly: CPU Runaway Thread / Heavy Compute
+2026-10-17 09:10:45,99.26,48.84,40.47,90.49,Anomaly: CPU Runaway Thread / Heavy Compute
+2026-10-17 09:11:45,92.69,53.27,40.51,87.13,Anomaly: CPU Runaway Thread / Heavy Compute
+2026-10-17 09:12:45,97.3,49.43,36.6,90.59,Anomaly: CPU Runaway Thread / Heavy Compute
+2026-10-17 09:13:45,96.36,52.11,41.59,75.61,Anomaly: CPU Runaway Thread / Heavy Compute
+2026-10-17 09:14:45,92.44,54.95,40.89,100.52,Anomaly: CPU Runaway Thread / Heavy Compute
+2026-10-17 09:15:45,92.94,52.18,37.73,74.56,Anomaly: CPU Runaway Thread / Heavy Compute
+2026-10-17 09:16:45,18.87,44.68,42.13,104.7,Normal Operation
+2026-10-17 09:17:45,25.39,43.9,48.09,82.3,Normal Operation
+2026-10-17 09:18:45,25.51,43.74,41.19,108.7,Normal Operation
+2026-10-17 09:19:45,23.67,48.45,34.73,107.91,Normal Operation
+2026-10-17 09:20:45,27.05,41.25,38.12,109.69,Normal Operation
+2026-10-17 09:21:45,29.37,45.99,37.69,76.48,Normal Operation
+2026-10-17 09:22:45,22.33,48.99,36.73,94.0,Normal Operation
+2026-10-17 09:23:45,31.64,44.81,40.85,129.69,Normal Operation
+2026-10-17 09:24:45,30.65,46.94,44.95,110.81,Normal Operation
+2026-10-17 09:25:45,31.22,46.75,39.79,114.77,Normal Operation
+2026-10-17 09:26:45,31.79,48.67,36.13,114.61,Normal Operation
+2026-10-17 09:27:45,31.41,50.63,40.7,143.48,Normal Operation
+2026-10-17 09:28:45,29.51,47.07,35.47,131.53,Normal Operation
+2026-10-17 09:29:45,27.54,46.13,41.72,125.76,Normal Operation
+2026-10-17 09:30:45,32.5,47.04,39.7,122.86,Normal Operation
+2026-10-17 09:31:45,31.75,52.43,37.34,135.36,Normal Operation
+2026-10-17 09:32:45,29.44,52.64,36.53,135.16,Normal Operation
+2026-10-17 09:33:45,38.59,49.71,40.09,162.14,Normal Operation
+2026-10-17 09:34:45,35.93,50.25,42.27,149.64,Normal Operation
+2026-10-17 09:35:45,32.45,47.9,42.72,146.39,Normal Operation
+2026-10-17 09:36:45,28.55,51.32,38.99,85.93,Normal Operation
+2026-10-17 09:37:45,31.65,48.92,39.32,154.02,Normal Operation
+2026-10-17 09:38:45,36.79,47.84,37.71,163.04,Normal Operation
+2026-10-17 09:39:45,34.66,50.14,35.36,136.96,Normal Operation
+2026-10-17 09:40:45,31.41,49.12,35.58,184.2,Normal Operation
+2026-10-17 09:41:45,37.39,50.23,42.0,150.84,Normal Operation
+2026-10-17 09:42:45,36.32,49.81,35.61,147.09,Normal Operation
+2026-10-17 09:43:45,35.86,50.62,42.21,151.99,Normal Operation
+2026-10-17 09:44:45,33.29,50.22,35.64,157.39,Normal Operation
+2026-10-17 09:45:45,39.16,53.74,32.3,169.85,Normal Operation
+2026-10-17 09:46:45,34.56,51.5,35.31,167.39,Normal Operation
+2026-10-17 09:47:45,37.87,49.34,37.85,174.88,Normal Operation
+2026-10-17 09:48:45,42.94,51.06,36.19,170.19,Normal Operation
+2026-10-17 09:49:45,43.48,48.81,38.1,170.06,Normal Operation
+2026-10-17 09:50:45,38.89,49.93,42.87,140.87,Normal Operation
+2026-10-17 09:51:45,28.74,47.88,37.05,187.63,Normal Operation
+2026-10-17 09:52:45,42.32,47.78,35.9,189.59,Normal Operation
+2026-10-17 09:53:45,36.55,50.05,34.25,205.41,Normal Operation
+2026-10-17 09:54:45,35.02,46.86,34.86,166.48,Normal Operation
+2026-10-17 09:55:45,42.55,49.86,40.26,196.71,Normal Operation
+2026-10-17 09:56:45,33.52,48.71,38.63,186.24,Normal Operation
+2026-10-17 09:57:45,42.49,49.45,39.9,208.12,Normal Operation
+2026-10-17 09:58:45,43.14,50.65,35.49,199.7,Normal Operation
+2026-10-17 09:59:45,41.67,51.09,32.69,207.01,Normal Operation
+2026-10-17 10:00:45,40.56,49.75,34.56,187.56,Normal Operation
+2026-10-17 10:01:45,39.32,47.03,33.45,183.98,Normal Operation
+2026-10-17 10:02:45,37.87,49.87,38.25,193.96,Normal Operation
+2026-10-17 10:03:45,35.6,51.35,36.05,206.3,Normal Operation
+2026-10-17 10:04:45,47.47,48.86,28.01,180.74,Normal Operation
+2026-10-17 10:05:45,37.39,44.26,29.89,167.95,Normal Operation
+2026-10-17 10:06:45,35.45,45.32,32.37,185.04,Normal Operation
+2026-10-17 10:07:45,38.07,48.28,38.18,181.85,Normal Operation
+2026-10-17 10:08:45,40.1,46.78,30.83,155.23,Normal Operation
+2026-10-17 10:09:45,41.31,51.74,33.2,155.13,Normal Operation
+2026-10-17 10:10:45,36.57,45.97,33.75,163.26,Normal Operation
+2026-10-17 10:11:45,36.31,46.24,33.98,161.52,Normal Operation
+2026-10-17 10:12:45,33.76,47.56,34.05,175.12,Normal Operation
+2026-10-17 10:13:45,35.23,41.44,30.41,174.08,Normal Operation
+2026-10-17 10:14:45,38.7,47.74,34.87,147.58,Normal Operation
+2026-10-17 10:15:45,34.98,45.22,29.9,140.42,Normal Operation
+2026-10-17 10:16:45,33.42,42.64,34.46,133.69,Normal Operation
+2026-10-17 10:17:45,34.79,44.39,30.53,137.53,Normal Operation
+2026-10-17 10:18:45,30.93,47.3,30.13,152.75,Normal Operation
+2026-10-17 10:19:45,25.58,45.28,31.19,161.35,Normal Operation
+2026-10-17 10:20:45,30.87,38.98,28.84,148.12,Normal Operation
+2026-10-17 10:21:45,21.55,45.11,32.53,147.36,Normal Operation
+2026-10-17 10:22:45,30.51,43.34,37.33,115.6,Normal Operation
+2026-10-17 10:23:45,32.29,44.14,24.49,150.68,Normal Operation
+2026-10-17 10:24:45,33.71,40.92,32.18,137.94,Normal Operation
+2026-10-17 10:25:45,31.51,45.23,23.98,134.43,Normal Operation
+2026-10-17 10:26:45,29.19,44.97,32.26,124.35,Normal Operation
+2026-10-17 10:27:45,24.86,43.06,24.71,128.6,Normal Operation
+2026-10-17 10:28:45,24.0,42.58,28.95,119.37,Normal Operation
+2026-10-17 10:29:45,26.51,44.6,31.51,113.19,Normal Operation
+2026-10-17 10:30:45,23.61,43.1,26.95,135.68,Normal Operation
+2026-10-17 10:31:45,22.67,56.01,31.42,100.76,Anomaly: Memory Leak Accumulation
+2026-10-17 10:32:45,25.6,57.21,33.03,109.97,Anomaly: Memory Leak Accumulation
+2026-10-17 10:33:45,21.88,56.87,33.5,89.46,Anomaly: Memory Leak Accumulation
+2026-10-17 10:34:45,17.92,58.27,27.24,109.2,Anomaly: Memory Leak Accumulation
+2026-10-17 10:35:45,22.94,57.43,33.58,88.1,Anomaly: Memory Leak Accumulation
+2026-10-17 10:36:45,19.82,60.07,29.75,100.2,Anomaly: Memory Leak Accumulation
+2026-10-17 10:37:45,24.41,59.98,33.02,92.79,Anomaly: Memory Leak Accumulation
+2026-10-17 10:38:45,26.59,61.93,34.84,72.35,Anomaly: Memory Leak Accumulation
+2026-10-17 10:39:45,24.21,63.52,29.99,129.28,Anomaly: Memory Leak Accumulation
+2026-10-17 10:40:45,22.57,62.41,33.11,74.19,Anomaly: Memory Leak Accumulation
+2026-10-17 10:41:45,25.34,64.98,29.65,89.57,Anomaly: Memory Leak Accumulation
+2026-10-17 10:42:45,16.66,67.11,28.57,88.36,Anomaly: Memory Leak Accumulation
+2026-10-17 10:43:45,17.63,66.52,35.63,52.8,Anomaly: Memory Leak Accumulation
+2026-10-17 10:44:45,19.87,66.58,28.11,77.89,Anomaly: Memory Leak Accumulation
+2026-10-17 10:45:45,17.44,69.66,35.92,59.88,Anomaly: Memory Leak Accumulation
+2026-10-17 10:46:45,18.95,70.46,35.59,53.71,Anomaly: Memory Leak Accumulation
+2026-10-17 10:47:45,16.77,70.37,28.99,58.09,Anomaly: Memory Leak Accumulation
+2026-10-17 10:48:45,16.84,70.92,31.43,130.59,Anomaly: Memory Leak Accumulation
+2026-10-17 10:49:45,15.96,72.87,32.93,72.5,Anomaly: Memory Leak Accumulation
+2026-10-17 10:50:45,19.79,76.09,29.4,49.18,Anomaly: Memory Leak Accumulation
+2026-10-17 10:51:45,16.28,74.34,33.46,59.46,Anomaly: Memory Leak Accumulation
+2026-10-17 10:52:45,12.13,75.17,31.91,74.27,Anomaly: Memory Leak Accumulation
+2026-10-17 10:53:45,16.1,76.94,32.98,81.7,Anomaly: Memory Leak Accumulation
+2026-10-17 10:54:45,14.23,77.41,30.06,64.42,Anomaly: Memory Leak Accumulation
+2026-10-17 10:55:45,21.28,79.27,30.92,47.94,Anomaly: Memory Leak Accumulation
+2026-10-17 10:56:45,17.39,78.08,33.67,66.33,Anomaly: Memory Leak Accumulation
+2026-10-17 10:57:45,20.5,81.91,35.85,38.91,Anomaly: Memory Leak Accumulation
+2026-10-17 10:58:45,16.4,82.0,37.21,35.95,Anomaly: Memory Leak Accumulation
+2026-10-17 10:59:45,19.22,84.32,29.23,83.94,Anomaly: Memory Leak Accumulation
+2026-10-17 11:00:45,18.7,84.1,34.15,36.66,Anomaly: Memory Leak Accumulation
+2026-10-17 11:01:45,18.02,85.03,41.61,61.56,Anomaly: Memory Leak Accumulation
+2026-10-17 11:02:45,10.06,85.08,36.41,92.82,Anomaly: Memory Leak Accumulation
+2026-10-17 11:03:45,16.96,85.61,31.46,73.67,Anomaly: Memory Leak Accumulation
+2026-10-17 11:04:45,21.16,87.95,33.87,24.35,Anomaly: Memory Leak Accumulation
+2026-10-17 11:05:45,16.62,88.57,37.04,73.41,Anomaly: Memory Leak Accumulation
+2026-10-17 11:06:45,20.86,89.13,39.08,38.96,Anomaly: Memory Leak Accumulation
+2026-10-17 11:07:45,15.31,91.23,40.14,46.69,Anomaly: Memory Leak Accumulation
+2026-10-17 11:08:45,16.18,90.29,42.34,79.24,Anomaly: Memory Leak Accumulation
+2026-10-17 11:09:45,19.94,91.81,38.25,83.88,Anomaly: Memory Leak Accumulation
+2026-10-17 11:10:45,12.89,92.97,39.44,82.45,Anomaly: Memory Leak Accumulation
+2026-10-17 11:11:45,24.03,93.24,42.5,111.86,Anomaly: Memory Leak Accumulation
+2026-10-17 11:12:45,17.57,94.78,43.67,94.54,Anomaly: Memory Leak Accumulation
+2026-10-17 11:13:45,23.52,94.85,37.57,85.95,Anomaly: Memory Leak Accumulation
+2026-10-17 11:14:45,17.24,97.52,38.52,73.91,Anomaly: Memory Leak Accumulation
+2026-10-17 11:15:45,22.39,99.5,43.33,89.93,Anomaly: Memory Leak Accumulation
+2026-10-17 11:16:45,18.75,46.16,38.95,116.96,Normal Operation
+2026-10-17 11:17:45,15.29,46.79,36.02,89.89,Normal Operation
+2026-10-17 11:18:45,19.69,42.75,39.93,80.35,Normal Operation
+2026-10-17 11:19:45,21.28,44.94,37.27,64.94,Normal Operation
+2026-10-17 11:20:45,23.88,41.43,41.52,85.15,Normal Operation
+2026-10-17 11:21:45,19.97,45.13,37.19,115.71,Normal Operation
+2026-10-17 11:22:45,25.1,44.3,44.87,117.92,Normal Operation
+2026-10-17 11:23:45,22.94,43.11,38.63,113.97,Normal Operation
+2026-10-17 11:24:45,17.5,46.52,38.89,88.82,Normal Operation
+2026-10-17 11:25:45,28.45,49.52,39.8,111.54,Normal Operation
+2026-10-17 11:26:45,29.37,48.39,34.65,97.99,Normal Operation
+2026-10-17 11:27:45,24.94,45.91,40.9,81.46,Normal Operation
+2026-10-17 11:28:45,26.14,49.88,42.31,123.15,Normal Operation
+2026-10-17 11:29:45,25.56,49.04,31.09,84.69,Normal Operation
+2026-10-17 11:30:45,29.33,51.5,38.45,116.09,Normal Operation

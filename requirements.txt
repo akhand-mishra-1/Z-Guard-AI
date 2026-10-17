@@ -1,0 +1,10 @@
+# Z-Guard AI Dependencies
+# Compatible with x86_64 and s390x (IBM LinuxONE / zSystems)
+
+streamlit>=1.35.0,<2.0.0
+pandas>=2.1.0,<3.0.0
+numpy>=1.26.0,<3.0.0
+scikit-learn>=1.4.0,<2.0.0
+plotly>=5.20.0,<6.0.0
+psutil>=5.9.0,<7.0.0
+pytest>=8.0.0,<9.0.0
