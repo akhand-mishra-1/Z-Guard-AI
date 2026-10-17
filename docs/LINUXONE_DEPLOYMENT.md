@@ -68,8 +68,8 @@ sudo apt install -y python3 python3-pip python3-venv git build-essential libopen
 
 ### Step 4: Clone the Z-Guard AI Repository
 ```bash
-git clone https://github.com/your-username/z-guard-ai.git
-cd z-guard-ai
+git clone https://github.com/akhand-mishra-1/Z-Guard-AI.git
+cd Z-Guard-AI
 ```
 
 ### Step 5: Configure Python Virtual Environment

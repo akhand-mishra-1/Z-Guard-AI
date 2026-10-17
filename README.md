@@ -76,6 +76,10 @@ IBMdatathon/
 ├── README.md                   # Complete documentation & 3-minute hackathon pitch
 ├── run.ps1                     # Quick start script for Windows PowerShell
 ├── run.sh                      # Quick start script for Linux / IBM LinuxONE (s390x)
+├── run_jupyterlab.ps1          # One-click Windows JupyterLab launcher
+├── run_jupyterlab.sh           # One-click Linux/s390x JupyterLab launcher
+├── notebooks/
+│   └── demo_walkthrough.ipynb  # Interactive Jupyter walkthrough notebook
 ├── src/
 │   ├── __init__.py
 │   ├── config.py               # Constants, metric thresholds, IBM Carbon color tokens
@@ -93,7 +97,9 @@ IBMdatathon/
 │   ├── test_detector.py        # Tests for training, outlier scoring, edge cases
 │   └── test_metrics.py         # Tests for psutil snapshot schema & boundaries
 ├── scripts/
-│   └── generate_datasets.py    # Standalone dataset regeneration script
+│   ├── generate_datasets.py    # Standalone dataset regeneration script
+│   ├── generate_notebook.py    # Standalone walkthrough notebook builder
+│   └── verify_app_headless.py  # End-to-end headless pipeline verifier
 └── docs/
     └── LINUXONE_DEPLOYMENT.md  # Step-by-step IBM LinuxONE Community Cloud (s390x) guide
 ```
@@ -109,8 +115,8 @@ IBMdatathon/
 ### Windows
 ```powershell
 # 1. Clone repository
-git clone https://github.com/your-org/z-guard-ai.git
-cd IBMdatathon
+git clone https://github.com/akhand-mishra-1/Z-Guard-AI.git
+cd Z-Guard-AI
 
 # 2. Run automated PowerShell launcher (creates venv, installs dependencies, launches app)
 .\run.ps1
@@ -119,13 +125,23 @@ cd IBMdatathon
 ### Linux / macOS / IBM LinuxONE (s390x)
 ```bash
 # 1. Clone repository
-git clone https://github.com/your-org/z-guard-ai.git
-cd IBMdatathon
+git clone https://github.com/akhand-mishra-1/Z-Guard-AI.git
+cd Z-Guard-AI
 
 # 2. Run automated bash launcher
 chmod +x run.sh
 ./run.sh
 ```
+
+### Running on JupyterLab
+```powershell
+# Windows:
+.\run_jupyterlab.ps1
+
+# Linux / macOS / s390x:
+./run_jupyterlab.sh
+```
+Then open `notebooks/demo_walkthrough.ipynb` and click **Run $\rightarrow$ Run All Cells**.
 
 ### Manual Setup
 ```bash
