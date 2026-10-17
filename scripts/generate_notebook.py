@@ -1,0 +1,269 @@
+"""
+Generates a comprehensive Jupyter Notebook (notebooks/demo_walkthrough.ipynb)
+demonstrating the complete Z-Guard AI machine learning pipeline.
+"""
+
+import json
+import os
+
+def create_notebook():
+    os.makedirs("notebooks", exist_ok=True)
+    
+    cells = [
+        {
+            "cell_type": "markdown",
+            "metadata": {},
+            "source": [
+                "# 🛡️ Z-Guard AI: Real-Time Server Anomaly Detection\n",
+                "### IBM Z Datathon 2026 Interactive Notebook\n",
+                "\n",
+                "This notebook provides a complete, interactive walkthrough of the **Z-Guard AI** pipeline:\n",
+                "1. **Environment & Hardware Inspection** (CPU Architecture & s390x detection)\n",
+                "2. **Data Ingestion & Cleaning** (Synthetic Diurnal Telemetry + Injected Incidents)\n",
+                "3. **Unsupervised Machine Learning** (Scikit-Learn Isolation Forest)\n",
+                "4. **Metric Attribution & Root Cause Explainability**\n",
+                "5. **Interactive Visualizations** (Plotly Timelines, Radar Charts, Scatter Plots)\n",
+                "6. **Live Hardware Telemetry Capture** (via `psutil`)"
+            ]
+        },
+        {
+            "cell_type": "markdown",
+            "metadata": {},
+            "source": [
+                "## Step 1: Install & Import Dependencies"
+            ]
+        },
+        {
+            "cell_type": "code",
+            "execution_count": None,
+            "metadata": {},
+            "outputs": [],
+            "source": [
+                "# Install requirements if running in a fresh Jupyter / Colab environment\n",
+                "# !pip install -r ../requirements.txt\n",
+                "\n",
+                "import os\n",
+                "import sys\n",
+                "import numpy as np\n",
+                "import pandas as pd\n",
+                "\n",
+                "# Add project root to sys.path so we can import src modules\n",
+                "project_root = os.path.abspath(os.path.join(os.getcwd(), \"..\"))\n",
+                "if project_root not in sys.path:\n",
+                "    sys.path.insert(0, project_root)\n",
+                "\n",
+                "from src.config import FEATURE_COLUMNS, METRIC_LABELS, METRIC_UNITS, OPERATIONAL_THRESHOLDS\n",
+                "from src.data_loader import generate_synthetic_telemetry, validate_and_clean_data\n",
+                "from src.detector import AnomalyDetector\n",
+                "from src.metrics_collector import SystemMetricsCollector\n",
+                "from src.visualizer import (\n",
+                "    create_time_series_chart,\n",
+                "    create_synchronized_metrics_dashboard,\n",
+                "    create_scatter_correlation,\n",
+                "    create_radar_attribution\n",
+                ")\n",
+                "\n",
+                "print(\"✓ Z-Guard AI modules successfully imported!\")"
+            ]
+        },
+        {
+            "cell_type": "markdown",
+            "metadata": {},
+            "source": [
+                "## Step 2: Check Hardware & Host Architecture (s390x / IBM LinuxONE Readiness)"
+            ]
+        },
+        {
+            "cell_type": "code",
+            "execution_count": None,
+            "metadata": {},
+            "outputs": [],
+            "source": [
+                "collector = SystemMetricsCollector()\n",
+                "host_info = collector.get_system_info()\n",
+                "\n",
+                "print(f\"OS Platform:       {host_info.get('os')} ({host_info.get('machine_arch')})\")\n",
+                "print(f\"CPU Cores:         {host_info.get('cpu_cores_logical')}\")\n",
+                "print(f\"System Memory:     {host_info.get('memory_total_gb')}\")\n",
+                "print(f\"IBM s390x Target:  {'YES (Mainframe hardware detected)' if host_info.get('is_s390x') else 'NO (Running in development mode)'}\")"
+            ]
+        },
+        {
+            "cell_type": "markdown",
+            "metadata": {},
+            "source": [
+                "## Step 3: Load & Validate Server Telemetry\n",
+                "You can load the pre-packaged demo dataset (`sample_server_metrics.csv`) or upload your own CSV."
+            ]
+        },
+        {
+            "cell_type": "code",
+            "execution_count": None,
+            "metadata": {},
+            "outputs": [],
+            "source": [
+                "csv_path = os.path.join(project_root, \"data\", \"sample_server_metrics.csv\")\n",
+                "raw_df = pd.read_csv(csv_path)\n",
+                "\n",
+                "# Validate and clean dataset\n",
+                "df, report = validate_and_clean_data(raw_df)\n",
+                "print(f\"Validation Status: {report['is_valid']}\")\n",
+                "print(f\"Total Records:     {len(df)}\")\n",
+                "df.head()"
+            ]
+        },
+        {
+            "cell_type": "markdown",
+            "metadata": {},
+            "source": [
+                "## Step 4: Train Scikit-Learn Isolation Forest Model\n",
+                "Fit the unsupervised anomaly detector using `RobustScaler` and configurable `contamination`."
+            ]
+        },
+        {
+            "cell_type": "code",
+            "execution_count": None,
+            "metadata": {},
+            "outputs": [],
+            "source": [
+                "# Initialize and fit model\n",
+                "detector = AnomalyDetector(contamination=0.05, n_estimators=150, random_state=42)\n",
+                "detector.fit(df)\n",
+                "\n",
+                "print(\"Model summary:\")\n",
+                "detector.get_model_summary()"
+            ]
+        },
+        {
+            "cell_type": "markdown",
+            "metadata": {},
+            "source": [
+                "## Step 5: Run Inference & Root-Cause Metric Attribution"
+            ]
+        },
+        {
+            "cell_type": "code",
+            "execution_count": None,
+            "metadata": {},
+            "outputs": [],
+            "source": [
+                "scored_df = detector.predict(df)\n",
+                "\n",
+                "anomalies = scored_df[scored_df[\"anomaly\"] == True]\n",
+                "print(f\"Total Records Analyzed: {len(scored_df)}\")\n",
+                "print(f\"Detected Anomalies:     {len(anomalies)} ({len(anomalies)/len(scored_df)*100:.1f}%)\")\n",
+                "print(f\"Critical Severities:    {(scored_df['severity'] == 'CRITICAL').sum()}\")\n",
+                "print(f\"Warning Severities:     {(scored_df['severity'] == 'WARNING').sum()}\")\n",
+                "\n",
+                "# Display top detected anomaly events\n",
+                "anomalies[[\"timestamp\", \"severity\", \"anomaly_score\", \"culprit_metric\", \"anomaly_reason\", \"mitigation_action\"]].head(10)"
+            ]
+        },
+        {
+            "cell_type": "markdown",
+            "metadata": {},
+            "source": [
+                "## Step 6: Interactive Plotly Visualizations\n",
+                "Plotly charts display interactively right inside your Jupyter Notebook."
+            ]
+        },
+        {
+            "cell_type": "code",
+            "execution_count": None,
+            "metadata": {},
+            "outputs": [],
+            "source": [
+                "# 1. Synchronized 4-metric timeline with highlighted anomalies\n",
+                "fig_sync = create_synchronized_metrics_dashboard(scored_df)\n",
+                "fig_sync.show()"
+            ]
+        },
+        {
+            "cell_type": "code",
+            "execution_count": None,
+            "metadata": {},
+            "outputs": [],
+            "source": [
+                "# 2. Single metric deep-dive (e.g. CPU or Memory with threshold lines)\n",
+                "fig_cpu = create_time_series_chart(scored_df, \"cpu_pct\")\n",
+                "fig_cpu.show()"
+            ]
+        },
+        {
+            "cell_type": "code",
+            "execution_count": None,
+            "metadata": {},
+            "outputs": [],
+            "source": [
+                "# 3. Multi-metric Incident Root-Cause Radar Deep-Dive\n",
+                "if not anomalies.empty:\n",
+                "    sample_anomaly_row = anomalies.iloc[0]\n",
+                "    print(f\"Radar analysis for anomaly at {sample_anomaly_row['timestamp']} (Primary driver: {sample_anomaly_row['culprit_metric']})\")\n",
+                "    fig_radar = create_radar_attribution(sample_anomaly_row, detector.baseline_stats)\n",
+                "    fig_radar.show()"
+            ]
+        },
+        {
+            "cell_type": "markdown",
+            "metadata": {},
+            "source": [
+                "## Step 7: Live Hardware Snapshot via psutil"
+            ]
+        },
+        {
+            "cell_type": "code",
+            "execution_count": None,
+            "metadata": {},
+            "outputs": [],
+            "source": [
+                "snapshot = collector.capture_snapshot()\n",
+                "live_point = pd.DataFrame([snapshot])\n",
+                "live_score = detector.predict(live_point)\n",
+                "\n",
+                "print(\"Live Snapshot from host machine:\")\n",
+                "print(f\"Timestamp:   {snapshot['timestamp']}\")\n",
+                "print(f\"CPU:         {snapshot['cpu_pct']}%\")\n",
+                "print(f\"Memory:      {snapshot['memory_pct']}%\")\n",
+                "print(f\"Disk:        {snapshot['disk_pct']}%\")\n",
+                "print(f\"Network:     {snapshot['network_mbps']} Mbps\")\n",
+                "print(f\"ML Verdict:  {live_score.loc[0, 'prediction_label']} (Severity Score: {live_score.loc[0, 'anomaly_score']}%)\")"
+            ]
+        },
+        {
+            "cell_type": "markdown",
+            "metadata": {},
+            "source": [
+                "## Step 8: How to Run the Full Streamlit Dashboard\n",
+                "To launch the full interactive web dashboard from Jupyter, execute the following cell:"
+            ]
+        },
+        {
+            "cell_type": "code",
+            "execution_count": None,
+            "metadata": {},
+            "outputs": [],
+            "source": [
+                "# Run this in your terminal or use the line magic below:\n",
+                "# !streamlit run ../app.py"
+            ]
+        }
+    ]
+    
+    notebook = {
+        "cells": cells,
+        "metadata": {
+            "language_info": {
+                "name": "python",
+                "version": "3.13"
+            }
+        },
+        "nbformat": 4,
+        "nbformat_minor": 2
+    }
+    
+    with open("notebooks/demo_walkthrough.ipynb", "w", encoding="utf-8") as f:
+        json.dump(notebook, f, indent=2)
+    print("✓ Created notebooks/demo_walkthrough.ipynb successfully!")
+
+if __name__ == "__main__":
+    create_notebook()
